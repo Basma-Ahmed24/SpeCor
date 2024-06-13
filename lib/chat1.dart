@@ -70,7 +70,7 @@ audioPlayer=AudioPlayer();
       elevation: 0,
       title: Row(
         children: [
-          x!.image==''?CircleAvatar(backgroundColor: Colors.white,):CircleAvatar(backgroundImage:NetworkImage( x!.image),)
+          x!.image==""?CircleAvatar(backgroundImage: AssetImage("assets/avatar.png",) ,):CircleAvatar(backgroundImage:NetworkImage( x!.image),)
           ,SizedBox(width: 10.w,), Text(x!.name??''),
         ],
       ),

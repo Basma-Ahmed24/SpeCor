@@ -103,7 +103,7 @@ Widget Chat_item(SpeCor_model chat){
   ListTile(onTap: (){
     Navigator.push(context, MaterialPageRoute(builder: (context)=>Chat_1(chat)));
   },
-  leading:user.image==''?CircleAvatar(backgroundColor: Colors.white,) :CircleAvatar(radius: 30.sp,backgroundImage: NetworkImage(user.image,),backgroundColor: Colors.white,),
+  leading:user.image==''?CircleAvatar(backgroundImage: AssetImage("assets/avatar.png",),radius: 30,) :CircleAvatar(radius: 30.sp,backgroundImage: NetworkImage(user.image,),backgroundColor: Colors.white,),
                       title: Text(user.name,style: TextStyle(
                           color: Colors.white,fontWeight: FontWeight.bold
                       ),),
@@ -131,7 +131,7 @@ All_users(context){
                 leading: e.image!=''?CircleAvatar(
                   backgroundColor: Colors.white,
                   backgroundImage: NetworkImage(e.image),
-                ):CircleAvatar(backgroundColor: Colors.white,),
+                ):CircleAvatar(backgroundImage: AssetImage("assets/avatar.png",)),
                 title: Text(e.name,style: TextStyle(color: Colors.white),),
               )
             ],)).toList(), // Convert iterable to list
