@@ -44,98 +44,103 @@ class _RegisterState extends State<Register> {
       )
           :  Container(
           color: Colors.black,
-          child: Column
-            (
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TextFormField
+          child: Padding(
+            padding: const EdgeInsets.all(10),
+            child: SingleChildScrollView(
+              child: Column
                 (
-                controller: name,
-                style: TextStyle(color: Colors.white),
-                cursorColor: Colors.black,
-                decoration: InputDecoration(
-                  hintText: 'name',
-                    hintStyle: TextStyle(color: Colors.grey),
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset("assets/SpeCor - Graduation Project.png",width: 300.w,height: 250.h,),
 
-                    focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.black87)
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(color: Colors.grey)
-                    ),
-                    fillColor: Colors.grey.shade800,
-                    filled: true
-                ),
-              ),
-              SizedBox(height: 10.h,),
-              TextFormField
-                (
-                controller: email,
-                style: TextStyle(color: Colors.white),
-                cursorColor: Colors.black,
-                decoration: InputDecoration(
-                    hintStyle: TextStyle(color: Colors.grey),
+                  TextFormField
+                    (
+                    controller: name,
+                    style: TextStyle(color: Colors.white),
+                    cursorColor: Colors.black,
+                    decoration: InputDecoration(
+                      hintText: 'name',
+                        hintStyle: TextStyle(color: Colors.grey),
 
-                    hintText: 'email',
-                    focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.black87)
+                        focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(color: Colors.black87)
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: BorderSide(color: Colors.grey)
+                        ),
+                        fillColor: Colors.grey.shade800,
+                        filled: true
                     ),
-                    enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(color: Colors.grey)
-                    ),
-                    fillColor: Colors.grey.shade800,
-                    filled: true
-                ),
-              ),
-              SizedBox(height: 10.h,),
-              TextFormField
-                (
-                controller: pass,
-                style: TextStyle(color: Colors.white),
-                cursorColor: Colors.black,
-                decoration: InputDecoration(
-                    hintStyle: TextStyle(color: Colors.grey),
+                  ),
+                  SizedBox(height: 10.h,),
+                  TextFormField
+                    (
+                    controller: email,
+                    style: TextStyle(color: Colors.white),
+                    cursorColor: Colors.black,
+                    decoration: InputDecoration(
+                        hintStyle: TextStyle(color: Colors.grey),
 
-                    hintText: 'password',
-                    focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.black87)
+                        hintText: 'email',
+                        focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(color: Colors.black87)
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: BorderSide(color: Colors.grey)
+                        ),
+                        fillColor: Colors.grey.shade800,
+                        filled: true
                     ),
-                    enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(color: Colors.grey)
-                    ),
-                    fillColor: Colors.grey.shade800,
-                    filled: true
-                ),
-              ),
-              SizedBox(height: 10.h,),
-              TextFormField
-                (controller: image,
-                style: TextStyle(color: Colors.white),
-                cursorColor: Colors.black,
-                decoration: InputDecoration(
-                    hintStyle: TextStyle(color: Colors.grey),
+                  ),
+                  SizedBox(height: 10.h,),
+                  TextFormField
+                    (
+                    controller: pass,
+                    style: TextStyle(color: Colors.white),
+                    cursorColor: Colors.black,
+                    decoration: InputDecoration(
+                        hintStyle: TextStyle(color: Colors.grey),
 
-                    hintText: 'image',
-                    focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.black87)
+                        hintText: 'password',
+                        focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(color: Colors.black87)
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: BorderSide(color: Colors.grey)
+                        ),
+                        fillColor: Colors.grey.shade800,
+                        filled: true
                     ),
-                    enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        borderSide: BorderSide(color: Colors.grey)
+                  ),
+                  SizedBox(height: 10.h,),
+                  TextFormField
+                    (controller: image,
+                    style: TextStyle(color: Colors.white),
+                    cursorColor: Colors.black,
+                    decoration: InputDecoration(
+                        hintStyle: TextStyle(color: Colors.grey),
+
+                        hintText: 'image',
+                        focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(color: Colors.black87)
+                        ),
+                        enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: BorderSide(color: Colors.grey)
+                        ),
+                        fillColor: Colors.grey.shade800,
+                        filled: true
                     ),
-                    fillColor: Colors.grey.shade800,
-                    filled: true
-                ),
-              ),
-              SizedBox(height: 10.h,),
-              InkWell(onTap: (){
+                  ),
+                  SizedBox(height: 10.h,),
+                  InkWell(onTap: (){
     if (name.text.isNotEmpty &&
     email.text.isNotEmpty &&
     pass.text.isNotEmpty) {
@@ -162,37 +167,56 @@ class _RegisterState extends State<Register> {
     print("Please enter Fields");
     }
     },
-              // auth.reg(email.text, pass.text, name.text, image.text);
-                // setState(() {
-                //   current_user=users[users.indexWhere((element) => element.email==email.text)];
-                // });
-               // Navigator.push(context, MaterialPageRoute(builder: (c)=>Home()));
+                  // auth.reg(email.text, pass.text, name.text, image.text);
+                    // setState(() {
+                    //   current_user=users[users.indexWhere((element) => element.email==email.text)];
+                    // });
+                   // Navigator.push(context, MaterialPageRoute(builder: (c)=>Home()));
        //       },
-                child: Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(15),
+                      child: Container(
+                        width: MediaQuery.of(context).size.width,
+                        decoration: BoxDecoration(
+                            color: Color(0xff4f81bd),
+                            border: Border.all(color: Colors.grey.shade800),
+                            borderRadius: BorderRadius.circular(15)
+                        ),
+                        padding: EdgeInsets.symmetric(vertical: 10,horizontal: 30),
+                        child:isLoading
+                            ? Center(
+                          child: Container(
 
-                  decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey.shade800),
-                      borderRadius: BorderRadius.circular(15)
+                            child: CircularProgressIndicator(),
+                          ),
+                        )
+                            :  Center(child: Text('Register',style: TextStyle
+                          (color: Colors.white,fontWeight: FontWeight.w800,fontSize: 17.sp),)),
+                      ),
+                    ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 30),
-                  child: Text('Register',style: TextStyle(color: Colors.white),),
-                ),
-              ),
-              InkWell(onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>Login()));
-              },
-                child: Container(
+                  InkWell(onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Login()));
+                  },
+                    child:  Padding(
+                      padding: const EdgeInsets.only(right: 15,left: 15),
+        child: Container(
+              width: MediaQuery.of(context).size.width,
 
-                  decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey.shade800),
-                      borderRadius: BorderRadius.circular(15)
+              decoration: BoxDecoration(
+                  color: Color(0xff35fab1),
+                  border: Border.all(color: Colors.grey.shade800),
+                  borderRadius: BorderRadius.circular(15)
+              ),
+              padding: EdgeInsets.symmetric(vertical: 10,horizontal: 30),
+              child: Center(child: Text('Login',style: TextStyle(color: Colors.white,fontWeight: FontWeight.w800,fontSize: 17.sp),)),
+        ),
+      ),
                   ),
-                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 30),
-                  child: Text('Login',style: TextStyle(color: Colors.white),),
-                ),
-              ),
 
-            ],
+                ],
+              ),
+            ),
           )
       ),
     );

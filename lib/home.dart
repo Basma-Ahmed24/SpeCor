@@ -80,7 +80,8 @@ void initState(){
         centerTitle: true,
         title: GetBuilder<Data_controller>(
           init: Data_controller(),
-          builder: (controller)=>Text( "Chat, ${controller.Current_User==null?'':controller.Current_User.name}"),
+          builder: (controller)=>Text( "Welcome Back ${controller.Current_User==null?'':controller.Current_User.name}",style: TextStyle
+            (color: Colors.white,fontWeight: FontWeight.w800,fontSize: 17.sp)),
 
         )),
         body: Container(
